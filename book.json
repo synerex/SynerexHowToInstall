@@ -1,0 +1,26 @@
+{
+    "title": "Synerex Alpha User's Guide", 
+    "description": "", 
+    "language": "ja",
+    "plugins": [
+        "hide-published-with", 
+        "-sharing", 
+        "-lunr", 
+        "-search", 
+        "search-pro-kui", 
+        "expandable-chapters", 
+        "theme-synerex"
+    ],
+    "pdf": {
+        "toc": true,
+        "pageNumbers": true,
+        "fontSize": 12,
+        "paperSize": "a4",
+        "margin": {
+            "right": 36,
+            "left": 36,
+            "top": 24,
+            "bottom": 24
+        }
+    }
+}
