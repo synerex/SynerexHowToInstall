@@ -8,3 +8,5 @@
 - [Mac編](src/md/mac/00mhyosi.md)
 - [Ubuntu編](src/md/ubuntu/00uhyosi.md)
 
+
+- GitBook　へのリンク: ( https://synerex.github.io/SynerexHowToInstall )
