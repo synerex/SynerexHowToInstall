@@ -68,11 +68,12 @@ docker run --detach --tty  --name synerex_alpha --rm -v $PWD:/go/src/github.com/
 
 起動したら, `docker ps`コマンドでSynerexAlphaのコンテナが起動しているか確認する。
 
-### 5. 起動しているDocker内にAttachする
-以下のコマンドでDockerコンテナに入る事が出来る。  
+### 5. 起動しているDocker内にアタッチする
+以下のコマンドでDockerコンテナにアタッチ出来る。  
 ```sh
 docker exec -it synerex_alpha bash
 ```
+dockerコンテナからデタッチしたい場合は、ctrl+z又はターミナルで`exit`と打つとコンテナから出る事が出来る。
 
 ### 6. Synerexのビルドと実行
 Dockerコンテナにアタッチした状態で以下のコマンドを実行する。  
@@ -91,5 +92,3 @@ go build
 ```sh
 docker stop synerex_alpha
 ```
-
-
