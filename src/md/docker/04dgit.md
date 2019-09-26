@@ -7,5 +7,5 @@
 OS毎のインストール方法については、以下を参照のこと。
 
 [Windows](../win/04wgit.md)  
-[Mac](https://synerex.github.io/SynerexHowToInstall/src/md/mac/04wgit)  
+[Mac](../mac/04wgit.md)  
 [Ubuntu](https://synerex.github.io/SynerexHowToInstall/src/md/ubuntu/04ugit.html)    
