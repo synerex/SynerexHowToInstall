@@ -4,7 +4,7 @@
 
  Gitでは、各ユーザのワーキングディレクトリに、全履歴を含んだリポジトリの完全な複製が作られる。したがって、ネットワークにアクセスできないなどの理由で中心リポジトリにアクセスできない環境でも、履歴の調査や変更の記録といったほとんどの作業を行うことができる。
 
-# 各OS毎のインストール
+OS毎のインストール方法については、以下を参照のこと。
 
 [Windows](https://synerex.github.io/SynerexHowToInstall/src/md/win/04wgit)  
 [Mac](https://synerex.github.io/SynerexHowToInstall/src/md/mac/04wgit)  
