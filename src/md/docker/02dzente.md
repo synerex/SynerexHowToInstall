@@ -7,6 +7,6 @@
 1. Gitのインストール
 2. Dockerのインストール
 3. Dockerfileの作成
-1. Dockerのビルドと起動
+4. Dockerのビルドと起動
 5. 関連パッケージのインストール
 
