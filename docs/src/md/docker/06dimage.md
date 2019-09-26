@@ -1,12 +1,12 @@
 # Dockerイメージのビルドと操作
 
-## 1. Synerexのソースコードのダウンロード。  
+## Synerexのソースコードのダウンロード  
 Synerexのソースコードはgithubに公開されているのでクローンする。
 ``` git
 git clone https://github.com/synerex/synerex_alpha.git
 ```
 
-## 2. Dockerfileを作成する    
+## Dockerfileを作成する    
 ファイル名をDockerfileとし,`./synerex_alpha`のフォルダ直下に配置する
 Dockerfileには以下の様に記述する。  
 ``` Dockerfile
@@ -54,13 +54,13 @@ EXPOSE 10080
 - grpc
 - yarn
 
-## 3. Dockerfileをビルドしイメージを作成する  
+## Dockerfileをビルドしイメージを作成する  
 `./synerex_alpha`のフォルダ内で以下のコマンドを実行する
 ```bash
 docker build ./ -t synerex_alpha
 ```
 
-## 4. Dockerの操作
+## Dockerの操作
 ### 起動する  
 `./synerex_alpha`のフォルダ内で以下のコマンドを実行する
 
@@ -84,7 +84,7 @@ dockerコンテナからデタッチしたい場合は、ctrl+z又はターミ�
 docker stop synerex_alpha
 ```
 
-## 5 Synerexのビルドと実行
+## Synerexのビルドと実行
 Dockerコンテナにアタッチした状態で以下のコマンドを実行する。  
 ```
 cd cli/daemon

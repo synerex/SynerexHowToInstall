@@ -6,7 +6,7 @@
 
 OS毎のインストール方法については、以下を参照のこと。
 
-[Windows](../win/04wgit.md)  
-[Mac](../mac/04wgit.md)  
-[Ubuntu](../ubuntu/04ugit.md)    
+- [Windows](../win/04wgit.md)
+- [Mac](../mac/04wgit.md) 
+- [Ubuntu](../ubuntu/04ugit.md)
 

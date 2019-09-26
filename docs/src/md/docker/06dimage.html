@@ -767,11 +767,11 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="docker&#x30A4;&#x30E1;&#x30FC;&#x30B8;&#x306E;&#x30D3;&#x30EB;&#x30C9;&#x3068;&#x64CD;&#x4F5C;">Docker&#x30A4;&#x30E1;&#x30FC;&#x30B8;&#x306E;&#x30D3;&#x30EB;&#x30C9;&#x3068;&#x64CD;&#x4F5C;</h1>
-<h2 id="1-synerex&#x306E;&#x30BD;&#x30FC;&#x30B9;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3002;">1. Synerex&#x306E;&#x30BD;&#x30FC;&#x30B9;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3002;</h2>
+<h2 id="synerex&#x306E;&#x30BD;&#x30FC;&#x30B9;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;">Synerex&#x306E;&#x30BD;&#x30FC;&#x30B9;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;</h2>
 <p>Synerex&#x306E;&#x30BD;&#x30FC;&#x30B9;&#x30B3;&#x30FC;&#x30C9;&#x306F;github&#x306B;&#x516C;&#x958B;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x306E;&#x3067;&#x30AF;&#x30ED;&#x30FC;&#x30F3;&#x3059;&#x308B;&#x3002;</p>
 <pre><code class="lang-git">git clone https://github.com/synerex/synerex_alpha.git
 </code></pre>
-<h2 id="2-dockerfile&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;">2. Dockerfile&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;</h2>
+<h2 id="dockerfile&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;">Dockerfile&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;</h2>
 <p>&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x540D;&#x3092;Dockerfile&#x3068;&#x3057;,<code>./synerex_alpha</code>&#x306E;&#x30D5;&#x30A9;&#x30EB;&#x30C0;&#x76F4;&#x4E0B;&#x306B;&#x914D;&#x7F6E;&#x3059;&#x308B;
 Dockerfile&#x306B;&#x306F;&#x4EE5;&#x4E0B;&#x306E;&#x69D8;&#x306B;&#x8A18;&#x8FF0;&#x3059;&#x308B;&#x3002;  </p>
 <pre><code class="lang-Dockerfile"><span class="hljs-keyword">FROM</span> golang:<span class="hljs-number">1.13</span>.<span class="hljs-number">0</span>-buster
@@ -819,11 +819,11 @@ Dockerfile&#x306B;&#x306F;&#x4EE5;&#x4E0B;&#x306E;&#x69D8;&#x306B;&#x8A18;&#x8FF
 <li>grpc</li>
 <li>yarn</li>
 </ul>
-<h2 id="3-dockerfile&#x3092;&#x30D3;&#x30EB;&#x30C9;&#x3057;&#x30A4;&#x30E1;&#x30FC;&#x30B8;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;">3. Dockerfile&#x3092;&#x30D3;&#x30EB;&#x30C9;&#x3057;&#x30A4;&#x30E1;&#x30FC;&#x30B8;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;</h2>
+<h2 id="dockerfile&#x3092;&#x30D3;&#x30EB;&#x30C9;&#x3057;&#x30A4;&#x30E1;&#x30FC;&#x30B8;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;">Dockerfile&#x3092;&#x30D3;&#x30EB;&#x30C9;&#x3057;&#x30A4;&#x30E1;&#x30FC;&#x30B8;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;</h2>
 <p><code>./synerex_alpha</code>&#x306E;&#x30D5;&#x30A9;&#x30EB;&#x30C0;&#x5185;&#x3067;&#x4EE5;&#x4E0B;&#x306E;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3092;&#x5B9F;&#x884C;&#x3059;&#x308B;</p>
 <pre><code class="lang-bash">docker build ./ -t synerex_alpha
 </code></pre>
-<h2 id="4-docker&#x306E;&#x64CD;&#x4F5C;">4. Docker&#x306E;&#x64CD;&#x4F5C;</h2>
+<h2 id="docker&#x306E;&#x64CD;&#x4F5C;">Docker&#x306E;&#x64CD;&#x4F5C;</h2>
 <h3 id="&#x8D77;&#x52D5;&#x3059;&#x308B;">&#x8D77;&#x52D5;&#x3059;&#x308B;</h3>
 <p><code>./synerex_alpha</code>&#x306E;&#x30D5;&#x30A9;&#x30EB;&#x30C0;&#x5185;&#x3067;&#x4EE5;&#x4E0B;&#x306E;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3092;&#x5B9F;&#x884C;&#x3059;&#x308B;</p>
 <pre><code class="lang-bash">docker run --detach --tty  --name synerex_alpha --rm -v <span class="hljs-variable">$PWD</span>:/go/src/github.com/synerex/synerex_alpha -p 8080:8080 -p 3000:3000 -p 10080:10080 synerex_alpha
@@ -838,7 +838,7 @@ Dockerfile&#x306B;&#x306F;&#x4EE5;&#x4E0B;&#x306E;&#x69D8;&#x306B;&#x8A18;&#x8FF
 <p>&#x4EE5;&#x4E0B;&#x306E;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3067;Docker&#x30B3;&#x30F3;&#x30C6;&#x30CA;&#x306B;&#x505C;&#x6B62;&#x3059;&#x308B;&#x4E8B;&#x304C;&#x51FA;&#x6765;&#x308B;&#x3002;  </p>
 <pre><code class="lang-sh">docker stop synerex_alpha
 </code></pre>
-<h2 id="5-synerex&#x306E;&#x30D3;&#x30EB;&#x30C9;&#x3068;&#x5B9F;&#x884C;">5 Synerex&#x306E;&#x30D3;&#x30EB;&#x30C9;&#x3068;&#x5B9F;&#x884C;</h2>
+<h2 id="synerex&#x306E;&#x30D3;&#x30EB;&#x30C9;&#x3068;&#x5B9F;&#x884C;">Synerex&#x306E;&#x30D3;&#x30EB;&#x30C9;&#x3068;&#x5B9F;&#x884C;</h2>
 <p>Docker&#x30B3;&#x30F3;&#x30C6;&#x30CA;&#x306B;&#x30A2;&#x30BF;&#x30C3;&#x30C1;&#x3057;&#x305F;&#x72B6;&#x614B;&#x3067;&#x4EE5;&#x4E0B;&#x306E;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3092;&#x5B9F;&#x884C;&#x3059;&#x308B;&#x3002;  </p>
 <pre><code>cd cli/daemon
 go build
@@ -886,7 +886,7 @@ go build
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Dockerイメージのビルドと操作","level":"1.5.5","depth":2,"previous":{"title":"Dockerのインストール","level":"1.5.4","depth":2,"path":"src/md/docker/05docker.md","ref":"src/md/docker/05docker.md","articles":[]},"dir":"ltr"},"config":{"plugins":["hide-published-with","-sharing","-lunr","-search","search-pro-kui","expandable-chapters","theme-synerex"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"hide-published-with":{},"search-pro-kui":{},"expandable-chapters":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-synerex":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":24,"bottom":24},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Synerex Alpha User's Guide","language":"ja","gitbook":"*","description":""},"file":{"path":"src/md/docker/06dimage.md","mtime":"2019-09-26T05:59:29.991Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-26T06:28:07.034Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Dockerイメージのビルドと操作","level":"1.5.5","depth":2,"previous":{"title":"Dockerのインストール","level":"1.5.4","depth":2,"path":"src/md/docker/05docker.md","ref":"src/md/docker/05docker.md","articles":[]},"dir":"ltr"},"config":{"plugins":["hide-published-with","-sharing","-lunr","-search","search-pro-kui","expandable-chapters","theme-synerex"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"hide-published-with":{},"search-pro-kui":{},"expandable-chapters":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-synerex":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":24,"bottom":24},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Synerex Alpha User's Guide","language":"ja","gitbook":"*","description":""},"file":{"path":"src/md/docker/06dimage.md","mtime":"2019-09-26T06:50:14.683Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-26T06:57:19.196Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
