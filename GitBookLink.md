@@ -1,2 +1,2 @@
  # GitBook
-GitBookƒTƒCƒgiURL: [https://synerex.github.io/SynerexHowToInstall](https://synerex.github.io/SynerexHowToInstall)j‚ÖƒWƒƒƒ“ƒv
+GitBookã‚µã‚¤ãƒˆï¼ˆURL: [https://synerex.github.io/SynerexHowToInstall](https://synerex.github.io/SynerexHowToInstall)ï¼‰ã¸ã‚¸ãƒ£ãƒ³ãƒ—
